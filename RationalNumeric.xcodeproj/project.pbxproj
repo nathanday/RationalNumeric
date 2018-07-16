@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D85B4B8720FCAD8100A7224A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B8620FCAD8100A7224A /* main.swift */; };
+		D85B4B9020FCAE2B00A7224A /* RationalNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B8E20FCAE2B00A7224A /* RationalNumeric.swift */; };
+		D85B4B9120FCAE2B00A7224A /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B8F20FCAE2B00A7224A /* Rational.swift */; };
+		D85B4B9F20FCAEE400A7224A /* Rational_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B9E20FCAEE400A7224A /* Rational_Test.swift */; };
+		D85B4BA020FCAEED00A7224A /* RationalNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B8E20FCAE2B00A7224A /* RationalNumeric.swift */; };
+		D85B4BA120FCAEED00A7224A /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4B8F20FCAE2B00A7224A /* Rational.swift */; };
+		D85B4BA320FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4BA220FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift */; };
+		D85B4BA420FCAF5C00A7224A /* UnsignedInteger_Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B4BA220FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +32,23 @@
 /* Begin PBXFileReference section */
 		D85B4B8320FCAD8100A7224A /* RationalNumeric */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RationalNumeric; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85B4B8620FCAD8100A7224A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D85B4B8E20FCAE2B00A7224A /* RationalNumeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RationalNumeric.swift; sourceTree = "<group>"; };
+		D85B4B8F20FCAE2B00A7224A /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		D85B4B9620FCAE9F00A7224A /* RationalNumericTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RationalNumericTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85B4B9A20FCAE9F00A7224A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85B4B9E20FCAEE400A7224A /* Rational_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational_Test.swift; sourceTree = "<group>"; };
+		D85B4BA220FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsignedInteger_Arithmetic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D85B4B8020FCAD8100A7224A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85B4B9320FCAE9F00A7224A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				D85B4B8520FCAD8100A7224A /* RationalNumeric */,
+				D85B4B8D20FCAE2B00A7224A /* Types */,
+				D85B4B9720FCAE9F00A7224A /* RationalNumericTests */,
 				D85B4B8420FCAD8100A7224A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D85B4B8320FCAD8100A7224A /* RationalNumeric */,
+				D85B4B9620FCAE9F00A7224A /* RationalNumericTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,25 @@
 				D85B4B8620FCAD8100A7224A /* main.swift */,
 			);
 			path = RationalNumeric;
+			sourceTree = "<group>";
+		};
+		D85B4B8D20FCAE2B00A7224A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				D85B4B8E20FCAE2B00A7224A /* RationalNumeric.swift */,
+				D85B4B8F20FCAE2B00A7224A /* Rational.swift */,
+				D85B4BA220FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		D85B4B9720FCAE9F00A7224A /* RationalNumericTests */ = {
+			isa = PBXGroup;
+			children = (
+				D85B4B9E20FCAEE400A7224A /* Rational_Test.swift */,
+				D85B4B9A20FCAE9F00A7224A /* Info.plist */,
+			);
+			path = RationalNumericTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +124,23 @@
 			productReference = D85B4B8320FCAD8100A7224A /* RationalNumeric */;
 			productType = "com.apple.product-type.tool";
 		};
+		D85B4B9520FCAE9F00A7224A /* RationalNumericTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85B4B9B20FCAE9F00A7224A /* Build configuration list for PBXNativeTarget "RationalNumericTests" */;
+			buildPhases = (
+				D85B4B9220FCAE9F00A7224A /* Sources */,
+				D85B4B9320FCAE9F00A7224A /* Frameworks */,
+				D85B4B9420FCAE9F00A7224A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RationalNumericTests;
+			productName = RationalNumericTests;
+			productReference = D85B4B9620FCAE9F00A7224A /* RationalNumericTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +152,9 @@
 				ORGANIZATIONNAME = "Nathaniel Day";
 				TargetAttributes = {
 					D85B4B8220FCAD8100A7224A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D85B4B9520FCAE9F00A7224A = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -110,9 +172,20 @@
 			projectRoot = "";
 			targets = (
 				D85B4B8220FCAD8100A7224A /* RationalNumeric */,
+				D85B4B9520FCAE9F00A7224A /* RationalNumericTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D85B4B9420FCAE9F00A7224A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D85B4B7F20FCAD8100A7224A /* Sources */ = {
@@ -120,6 +193,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85B4B8720FCAD8100A7224A /* main.swift in Sources */,
+				D85B4B9020FCAE2B00A7224A /* RationalNumeric.swift in Sources */,
+				D85B4B9120FCAE2B00A7224A /* Rational.swift in Sources */,
+				D85B4BA420FCAF5C00A7224A /* UnsignedInteger_Arithmetic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85B4B9220FCAE9F00A7224A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85B4B9F20FCAEE400A7224A /* Rational_Test.swift in Sources */,
+				D85B4BA020FCAEED00A7224A /* RationalNumeric.swift in Sources */,
+				D85B4BA120FCAEED00A7224A /* Rational.swift in Sources */,
+				D85B4BA320FCAF4800A7224A /* UnsignedInteger_Arithmetic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +249,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -184,6 +270,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -224,6 +311,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -238,6 +326,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -246,7 +335,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -255,7 +343,38 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D85B4B9C20FCAE9F00A7224A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RationalNumericTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godofcocoa.RationalNumericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D85B4B9D20FCAE9F00A7224A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RationalNumericTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godofcocoa.RationalNumericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -276,6 +395,15 @@
 			buildConfigurations = (
 				D85B4B8B20FCAD8100A7224A /* Debug */,
 				D85B4B8C20FCAD8100A7224A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85B4B9B20FCAE9F00A7224A /* Build configuration list for PBXNativeTarget "RationalNumericTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85B4B9C20FCAE9F00A7224A /* Debug */,
+				D85B4B9D20FCAE9F00A7224A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
