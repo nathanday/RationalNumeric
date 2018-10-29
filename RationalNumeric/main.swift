@@ -23,3 +23,9 @@ print("\(a) - \(b) = \(rs)")
 let rd = a/b;
 print("\(a) ÷ \(b) = \(rd)")
 
+let d = Double(a)
+print("Double(Rational(\(a.numerator,a.denominator))) = \(d)")
+
+let i = Int(a)
+print("Double(Rational(\(a.numerator,a.denominator))) = \(i)")
+
