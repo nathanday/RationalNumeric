@@ -62,8 +62,10 @@ print(sub)
 ```swift
 let a = Rational(1,2);
 let b = Rational(3,6);
+
 print(a==b)
 // true
+
 print(a<b)
 // false
 ```
@@ -71,8 +73,10 @@ print(a<b)
 
 ```swift
 let a = Rational(12,18);
+
 print(a.numerator)
 // 2
+
 print(a.denominator)
 // 3
 ```
@@ -82,6 +86,7 @@ print(a.denominator)
 let a = Rational( 0.251, maxDenominator: 16 );
 print(a)
 // 1/4
+
 let b = Rational( 0.251, maxDenominator: 256 )
 print(a)
 // 63/251
@@ -91,12 +96,15 @@ print(a)
 
 ```swift
 let a = Rational( 3,2 );
+
 let d = Double(a);
 print(d)
 // 1.5
+
 let i = Int(a);
 print(i)
 // 1
+
 let s = String(a);
 print(s)
 // "3/2"
@@ -104,4 +112,4 @@ print(s)
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT-style license, see source files
