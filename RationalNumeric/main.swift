@@ -29,3 +29,5 @@ print("Double(Rational(\(a.numerator,a.denominator))) = \(d)")
 let i = Int(a)
 print("Double(Rational(\(a.numerator,a.denominator))) = \(i)")
 
+let f = Rational( 0.251, maxDenominator: 16 );
+print("Rational( 0.251, maxDenominator: 16 )=\(f)");
