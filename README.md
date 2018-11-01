@@ -4,11 +4,13 @@ Struct, `Rational` to represent a rational number with a numerator and denominat
 
 ## Features
 
-RationalNumeric represents type that have a  numerator and a denominator, supports basic math operations by implementing the
-protocol `SignedNumeric` through the protocol RationalNumeric. Its usefully when you need to deall with ratio without loss of precission.
+RationalNumeric represents types that have a  numerator and a denominator and support basic math operations by
+implementing the protocol `SignedNumeric` through the protocol RationalNumeric. Its usefully when you need to deal
+with ratios without loss of precission.
 
-The sole type of  RationalNumeric is Rational, Rational will be reduce to their simplest form, as a consequence the initialiser
-of the form `Rational(Int,Int) can potentially be slow finding the largest common division for the numerator and denominator. Requires Swift 4.2.
+The sole type of  RationalNumeric is Rational, Rational will always be reduce to its simplest form, as a consequence
+the initialiser of the form `Rational(Int,Int) can potentially be slow finding the largest common division for
+the numerator and denominator. Requires Swift 4.2.
 
 ## Including in your project
 
